@@ -7,76 +7,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Renci.SshNet; //SSH.netを使用
 
 namespace SSHtest
 {
     public partial class Form1 : Form
     {
-        string Keypath;
         public Form1()
         {
             InitializeComponent();
-            //デバッグのためあらかじめ値を入れておく
-            textBoxUserName.Text = "kyamaguchi";
-            textboxHostname.Text = "siruru18.dip.jp";
-            textBoxPassword.Text = "hikouki0108";
-            mtextPortNumber.Text = "2222";
         }
 
         private void ConnectionButton_Click(object sender, EventArgs e)
         {
-
-
-
             //SSH接続処理
-            //ホスト名：textboxHostname.Text
-            //ポート番号：mtextPortNumber.Text
-            //            int.Parse(mtextPortNumber.Text)
-
-            string Username = textBoxUserName.Text;
-            string Hostname = textboxHostname.Text;
-            string Password = textBoxPassword.Text;
-            int Portnumber = int.Parse(mtextPortNumber.Text);
-
-            // Setup Credentials and Server Information
-            ConnectionInfo ConnNfo = new ConnectionInfo(Hostname, Portnumber, Username,
-                new AuthenticationMethod[]{
-      
-                // Pasword based Authentication
-                new PasswordAuthenticationMethod(Username,Password),
-
-                // Key Based Authentication (using keys in OpenSSH Format)
-                new PrivateKeyAuthenticationMethod(Username,new PrivateKeyFile[]{
-                    new PrivateKeyFile(Keypath)
-                }),
-                }
-            );
-
-            
-
-            /////////////////////////////////////////
-
-            // Execute (SHELL) Commands
-            using (var sshclient = new SshClient(ConnNfo))
-            {
-                sshclient.Connect();
-                //SSHで送信したいコマンドを入力
-                //Executeで実行
-                //返り値で実行結果が帰ってくる？
-                textBoxConsole.Text += "pwd" + "\r\n";
-                textBoxConsole.Text += sshclient.CreateCommand("pwd").Execute() + "\r\n";
-                sshclient.Disconnect();
-            }
-
-
 
         }
 
         private void buttonKey_Click(object sender, EventArgs e)
         {
-            Keypath = FileOpen();
-            textBoxPath.Text = Keypath;
+            string path = FileOpen();
+            textBoxPath.Text = path;
         }
 
         //*****************************************************//
@@ -128,7 +78,5 @@ namespace SSHtest
                 return textBoxPath.Text;
             }
         }
-
-
     }
 }
