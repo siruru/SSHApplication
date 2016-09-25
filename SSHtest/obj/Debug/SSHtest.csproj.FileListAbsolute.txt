@@ -7,19 +7,5 @@ d:\document\visual studio 2015\Projects\SSHtest\SSHtest\obj\Debug\SSHtest.Proper
 d:\document\visual studio 2015\Projects\SSHtest\SSHtest\obj\Debug\SSHtest.csproj.GenerateResource.Cache
 d:\document\visual studio 2015\Projects\SSHtest\SSHtest\obj\Debug\SSHtest.exe
 d:\document\visual studio 2015\Projects\SSHtest\SSHtest\obj\Debug\SSHtest.pdb
-<<<<<<< HEAD
-=======
 d:\Document\visual studio 2015\Projects\SSHtest\SSHtest\bin\Debug\Renci.SshNet.dll
 d:\Document\visual studio 2015\Projects\SSHtest\SSHtest\bin\Debug\Renci.SshNet.xml
-D:\Document\Visual Studio 2015\GitHubProjects\SSHTest\SSHtest\bin\Debug\SSHtest.exe.config
-D:\Document\Visual Studio 2015\GitHubProjects\SSHTest\SSHtest\obj\Debug\SSHtest.exe
-D:\Document\Visual Studio 2015\GitHubProjects\SSHTest\SSHtest\obj\Debug\SSHtest.pdb
-D:\Document\Visual Studio 2015\GitHubProjects\SSHTest\SSHtest\bin\Debug\SSHtest.exe
-D:\Document\Visual Studio 2015\GitHubProjects\SSHTest\SSHtest\bin\Debug\SSHtest.pdb
-D:\Document\Visual Studio 2015\GitHubProjects\SSHTest\SSHtest\bin\Debug\Renci.SshNet.dll
-D:\Document\Visual Studio 2015\GitHubProjects\SSHTest\SSHtest\bin\Debug\Renci.SshNet.xml
-D:\Document\Visual Studio 2015\GitHubProjects\SSHTest\SSHtest\obj\Debug\SSHtest.csprojResolveAssemblyReference.cache
-D:\Document\Visual Studio 2015\GitHubProjects\SSHTest\SSHtest\obj\Debug\SSHtest.Form1.resources
-D:\Document\Visual Studio 2015\GitHubProjects\SSHTest\SSHtest\obj\Debug\SSHtest.Properties.Resources.resources
-D:\Document\Visual Studio 2015\GitHubProjects\SSHTest\SSHtest\obj\Debug\SSHtest.csproj.GenerateResource.Cache
->>>>>>> 4903593... 平書き修正
