@@ -33,11 +33,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.mtextPortNumber = new System.Windows.Forms.MaskedTextBox();
             this.ConnectionButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxConsole = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxPath = new System.Windows.Forms.TextBox();
             this.buttonKey = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBoxUserName = new System.Windows.Forms.TextBox();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -75,21 +79,21 @@
             // 
             // ConnectionButton
             // 
-            this.ConnectionButton.Location = new System.Drawing.Point(12, 134);
+            this.ConnectionButton.Location = new System.Drawing.Point(15, 64);
             this.ConnectionButton.Name = "ConnectionButton";
-            this.ConnectionButton.Size = new System.Drawing.Size(257, 23);
+            this.ConnectionButton.Size = new System.Drawing.Size(257, 49);
             this.ConnectionButton.TabIndex = 4;
             this.ConnectionButton.Text = "接続";
             this.ConnectionButton.UseVisualStyleBackColor = true;
             this.ConnectionButton.Click += new System.EventHandler(this.ConnectionButton_Click);
             // 
-            // textBox1
+            // textBoxConsole
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 163);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(257, 86);
-            this.textBox1.TabIndex = 5;
+            this.textBoxConsole.Location = new System.Drawing.Point(12, 119);
+            this.textBoxConsole.Multiline = true;
+            this.textBoxConsole.Name = "textBoxConsole";
+            this.textBoxConsole.Size = new System.Drawing.Size(534, 130);
+            this.textBoxConsole.TabIndex = 5;
             // 
             // openFileDialog1
             // 
@@ -98,7 +102,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 70);
+            this.label3.Location = new System.Drawing.Point(292, 64);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 12);
             this.label3.TabIndex = 6;
@@ -106,14 +110,14 @@
             // 
             // textBoxPath
             // 
-            this.textBoxPath.Location = new System.Drawing.Point(12, 94);
+            this.textBoxPath.Location = new System.Drawing.Point(290, 86);
             this.textBoxPath.Name = "textBoxPath";
             this.textBoxPath.Size = new System.Drawing.Size(256, 19);
             this.textBoxPath.TabIndex = 7;
             // 
             // buttonKey
             // 
-            this.buttonKey.Location = new System.Drawing.Point(78, 65);
+            this.buttonKey.Location = new System.Drawing.Point(471, 58);
             this.buttonKey.Name = "buttonKey";
             this.buttonKey.Size = new System.Drawing.Size(75, 23);
             this.buttonKey.TabIndex = 8;
@@ -121,15 +125,52 @@
             this.buttonKey.UseVisualStyleBackColor = true;
             this.buttonKey.Click += new System.EventHandler(this.buttonKey_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(290, 13);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(57, 12);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "ユーザー名";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(290, 38);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 12);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "パスワード";
+            // 
+            // textBoxUserName
+            // 
+            this.textBoxUserName.Location = new System.Drawing.Point(362, 10);
+            this.textBoxUserName.Name = "textBoxUserName";
+            this.textBoxUserName.Size = new System.Drawing.Size(184, 19);
+            this.textBoxUserName.TabIndex = 11;
+            // 
+            // textBoxPassword
+            // 
+            this.textBoxPassword.Location = new System.Drawing.Point(362, 34);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PasswordChar = '*';
+            this.textBoxPassword.Size = new System.Drawing.Size(184, 19);
+            this.textBoxPassword.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(558, 261);
+            this.Controls.Add(this.textBoxPassword);
+            this.Controls.Add(this.textBoxUserName);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.buttonKey);
             this.Controls.Add(this.textBoxPath);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxConsole);
             this.Controls.Add(this.ConnectionButton);
             this.Controls.Add(this.mtextPortNumber);
             this.Controls.Add(this.label2);
@@ -149,11 +190,15 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.MaskedTextBox mtextPortNumber;
         private System.Windows.Forms.Button ConnectionButton;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxConsole;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBoxPath;
         private System.Windows.Forms.Button buttonKey;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBoxUserName;
+        private System.Windows.Forms.TextBox textBoxPassword;
     }
 }
 
